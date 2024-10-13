@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Item.css';
 
 const Item = ({ id, name, img, price, stock }) => {
@@ -15,21 +17,15 @@ const Item = ({ id, name, img, price, stock }) => {
                 <p className="Info">
                     Precio: ${price}
                 </p>
-                {stock !== undefined ? (
-                    <p className="Info">
-                        Stock disponible: {stock}
-                    </p>
-                ) : (
-                    <p className="Info">
-                        Stock no disponible
-                    </p>
-                )}
+                <p className="Info">
+                    Stock disponible: {stock}
+                </p>
             </section>
             <footer className='ItemFooter'>
-                <button className='Option'>Ver detalle</button>
+                <Link to={`/item/${id}`} className='Option'> Ver Detalle </Link>
             </footer>
         </article>
-    )
+    );
 }
 
 export default Item;

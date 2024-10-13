@@ -8,17 +8,17 @@
     border-radius: 10px;
     width: 200px;
     margin: 20px auto;
-  }
-  
-  .Controls {
+}
+
+.Controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 10px;
-  }
-  
-  .Button {
+}
+
+.Button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -27,19 +27,19 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  }
-  
-  .Button:hover {
+}
+
+.Button:hover {
     background-color: #0056b3;
-  }
-  
-  .Number {
+}
+
+.Number {
     font-size: 24px;
     font-weight: bold;
     margin: 0 10px;
-  }
-  
-  .AddButton {
+}
+
+.AddButton {
     background-color: #28a745;
     color: white;
     border: none;
@@ -48,14 +48,13 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  }
-  
-  .AddButton:hover {
+}
+
+.AddButton:hover {
     background-color: #218838;
-  }
-  
-  .AddButton:disabled {
+}
+
+.AddButton:disabled {
     background-color: #ccc;
     cursor: not-allowed;
-  }
-  
+}

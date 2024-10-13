@@ -1,35 +1,54 @@
+.custom-navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
 .navbar-logo {
-    width: 100px;
+    width: 100px; /* Aumentamos el tamaño del logo */
     height: auto;
-    margin-right: 10px;
-}
-
-.navbar-nav .nav-link {
-    margin-right: 20px;
-    font-size: 18px;
-    color: #333;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff;
+    margin-right: 20px; /* Más espacio a la derecha del logo */
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .option {
+    margin-right: 30px; /* Más espacio entre las categorías */
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .option:hover {
+    color: #007bff;
+}
+
+.navbar-nav .active-option {
+    font-weight: bold;
+    color: #007bff;
 }
 
 .cart-widget {
-    margin-left: auto;
     display: flex;
     align-items: center;
-    font-size: 16px; 
-    color: #333; 
+    font-size: 16px;
+    color: #333;
 }
 
 .cart-widget svg {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     margin-right: 5px;
 }
 
@@ -38,6 +57,6 @@
     color: white;
     border-radius: 50%;
     padding: 2px 6px;
-    font-size: 12px; 
+    font-size: 12px;
     margin-left: 5px;
 }

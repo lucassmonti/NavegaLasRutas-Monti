@@ -2,8 +2,8 @@ import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import './ItemDetail.css';
 
-
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
+    console.log("ItemDetail props:", { id, name, img, category, description, price, stock });
     return (
         <article className="CardItem">
             <header className="Header">
@@ -26,7 +26,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                 </p>
             </section>
             <footer className='ItemFooter'>
-                <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log(`Added ${quantity} items to the cart`)}/>
+                <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log(`Added ${quantity} items to the cart`)} />
             </footer>
         </article>
     );
