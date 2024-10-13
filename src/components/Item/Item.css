@@ -28,7 +28,7 @@
 .ItemImg {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Asegúrate de que este valor está establecido */
+  object-fit: cover;
 }
 
 .Info {

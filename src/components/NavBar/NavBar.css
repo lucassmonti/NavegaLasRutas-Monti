@@ -4,9 +4,9 @@
 }
 
 .navbar-logo {
-    width: 100px; /* Aumentamos el tamaño del logo */
+    width: 100px;
     height: auto;
-    margin-right: 20px; /* Más espacio a la derecha del logo */
+    margin-right: 20px;
 }
 
 .navbar-brand {
@@ -23,7 +23,7 @@
 
 .navbar-nav .nav-link,
 .navbar-nav .option {
-    margin-right: 30px; /* Más espacio entre las categorías */
+    margin-right: 30px;
     font-size: 18px;
     color: #333;
     text-decoration: none;
