@@ -7,27 +7,40 @@
     width: 300px;
     transition: transform 0.3s ease;
     margin: 20px auto;
-  }
-  
-  .Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Header {
     background-color: #007bff;
     color: white;
     padding: 10px;
     font-size: 18px;
-  }
-  
-  .ItemImg {
     width: 100%;
-    height: 200px;
+    box-sizing: border-box;
+}
+
+.ItemImg {
+    width: 100%;
+    height: auto;
     object-fit: cover;
-  }
-  
-  .Info {
+}
+
+.Info {
     font-size: 16px;
     margin: 10px 0;
-  }
-  
-  .ItemFooter {
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+}
+
+.ItemFooter {
     padding: 10px;
-  }
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
