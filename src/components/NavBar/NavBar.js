@@ -26,6 +26,7 @@ const NavBar = () => {
                     </Nav>
                     <div className="cart-widget">
                     <CartWidget />
+                    <div className="cart-count">3</div>
                     </div>
                 </Navbar.Collapse>
             </Container>

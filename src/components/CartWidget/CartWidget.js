@@ -1,12 +1,14 @@
-import cart from "./assets/carritocompras.jpg"
+import React from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
+import './CartWidget.css';
 
-const CartWidget = () => {
+const CartWidget = ({ itemCount }) => {
     return (
-        <div>
-            <img src={cart} alt="carritodecompras" />
-            0
+        <div className="cart-widget">
+            <FaShoppingCart />
+            {itemCount > 0 && <span className="cart-count">{itemCount}</span>}
         </div>
-    )
+    );
 }
 
-export default CartWidget
+export default CartWidget;

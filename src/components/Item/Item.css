@@ -1,51 +1,52 @@
 .CardItem {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    width: 250px; /* Cambiado de 200px a 250px */
-    transition: transform 0.3s ease;
-    margin: 20px; /* puedes ajustar esto según tu preferencia */
-  }
-  
-  .CardItem:hover {
-    transform: translateY(-5px);
-  }
-  
-  .Header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
-  .ItemImg {
-    width: 100%;
-    height: auto;
-  }
-  
-  .Info {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-  
-  .ItemFooter {
-    padding: 10px;
-  }
-  
-  .Option {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .Option:hover {
-    background-color: #218838;
-  }
-  
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  transition: transform 0.3s ease;
+  margin: 20px;
+}
+
+.CardItem:hover {
+  transform: translateY(-5px);
+}
+
+.Header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.ItemImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Info {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.ItemFooter {
+  padding: 10px;
+}
+
+.Option {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.Option:hover {
+  background-color: #218838;
+}
