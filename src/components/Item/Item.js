@@ -1,6 +1,6 @@
 import './Item.css';
 
-const Item = ({id, name, img, price, stock}) => {
+const Item = ({ id, name, img, price, stock }) => {
     return (
         <article className="CardItem">
             <header className="Header">
@@ -9,15 +9,21 @@ const Item = ({id, name, img, price, stock}) => {
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className="ItemImg"/>
+                <img src={img} alt={name} className="ItemImg" />
             </picture>
             <section>
                 <p className="Info">
                     Precio: ${price}
                 </p>
-                <p className="Info">
-                    Stock disponible: {stock}
-                </p>
+                {stock !== undefined ? (
+                    <p className="Info">
+                        Stock disponible: {stock}
+                    </p>
+                ) : (
+                    <p className="Info">
+                        Stock no disponible
+                    </p>
+                )}
             </section>
             <footer className='ItemFooter'>
                 <button className='Option'>Ver detalle</button>
@@ -26,4 +32,4 @@ const Item = ({id, name, img, price, stock}) => {
     )
 }
 
-export default Item
+export default Item;
