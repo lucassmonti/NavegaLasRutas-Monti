@@ -18,9 +18,6 @@ const NavBar = () => {
                 <NavLink to="/category/iPhone" className={({ isActive }) => isActive ? 'active-option' : 'option'}> iPhone </NavLink>
                 <NavLink to="/category/Macs" className={({ isActive }) => isActive ? 'active-option' : 'option'}> Macs </NavLink>
                 <NavLink to="/category/Watch" className={({ isActive }) => isActive ? 'active-option' : 'option'}> Watch </NavLink>
-                <NavLink to="/category/Accesorios" className={({ isActive }) => isActive ? 'active-option' : 'option'}> Accesorios </NavLink>
-                <NavLink to="/category/Apple TV" className={({ isActive }) => isActive ? 'active-option' : 'option'}> Apple TV </NavLink>
-                <NavLink to="/category/HomePod" className={({ isActive }) => isActive ? 'active-option' : 'option'}> HomePod </NavLink>
             </div>
             <div className="cart-widget">
                 <CartWidget />
