@@ -1,9 +1,7 @@
 import { createContext, useState } from 'react';
 
-// Creamos el contexto
 export const CartContext = createContext();
 
-// Creamos el proveedor del contexto
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
@@ -11,7 +9,7 @@ export const CartProvider = ({ children }) => {
         setCart(prevCart => {
             const existingItem = prevCart.find(i => i.id === item.id);
             if (existingItem) {
-                return prevCart.map(i => 
+                return prevCart.map(i =>
                     i.id === item.id ? { ...i, quantity: i.quantity + quantity } : i
                 );
             } else {

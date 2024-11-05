@@ -1,6 +1,10 @@
 .custom-navbar {
     background-color: #f8f9fa;
-    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .navbar-logo {
@@ -21,9 +25,13 @@
     color: #007bff;
 }
 
+.navbar-nav {
+    display: flex;
+    gap: 30px;
+}
+
 .navbar-nav .nav-link,
 .navbar-nav .option {
-    margin-right: 30px;
     font-size: 18px;
     color: #333;
     text-decoration: none;
@@ -47,8 +55,8 @@
 }
 
 .cart-widget svg {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     margin-right: 5px;
 }
 
