@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {
@@ -25,7 +26,10 @@ const Cart = () => {
                 ))}
             </ul>
             <div className="cart-total">Total: ${total.toFixed(2)}</div>
-            <button className="cart-checkout-button" onClick={clearCart}>Vaciar Carrito</button>
+            <div className="cart-buttons">
+                <button className="cart-checkout-button" onClick={clearCart}>Vaciar Carrito</button>
+                <Link to="/" className="cart-continue-shopping-button">Seguir Comprando</Link>
+            </div>
         </div>
     );
 }
